@@ -1,0 +1,27 @@
+:root {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+
+  font-size:13px;
+
+  @media screen and (max-width:700px) {
+    font-size:13px;
+  }
+}
+
+html {
+  min-height:100vh;
+  height:100%;
+}
+
+html, body, #___gatsby, #gatsby-focus-wrapper {
+  position:relative;
+  display:flex;
+  flex-grow:1;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}

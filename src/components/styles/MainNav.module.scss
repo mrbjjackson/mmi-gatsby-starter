@@ -1,0 +1,39 @@
+.ul {
+  position:absolute;
+  top:0;
+  right:0;
+  z-index:20;
+  text-transform:uppercase;
+  margin:2rem;
+  font-size:1.1em;
+
+  :global {
+    li {
+      a {
+        text-decoration: none;
+        line-height: 1.4em;
+
+        &.active, &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+.burger {
+  :global {
+    .hamburger {
+      padding:0;
+      margin-bottom:1rem;
+    }
+
+    .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before, .hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner:after, .hamburger.is-active .hamburger-inner:before {
+      height:2px;
+    }
+
+    .hamburger-inner {
+      text-indent:-99999px;
+    }
+  }
+}
